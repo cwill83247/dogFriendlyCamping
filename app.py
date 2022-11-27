@@ -50,6 +50,66 @@ def register():
     
     return render_template("register.html")
 
+
+#login
+@app.route("/login", methods=["GET", "POST"])
+def login():
+    if request.method == "POST":
+        # check if username exists in db
+        existing_user = mongo.db.users.find_one(                       
+            {"username": request.form.get("username").lower()})        
+
+        if existing_user:                                          
+            # ensure hashed password matches user input
+            if check_password_hash(                                             
+                existing_user["password"], request.form.get("password")):   
+                    session["user"] = request.form.get("username").lower()
+                    flash("Welcome, {}".format(
+                        request.form.get("username")))
+                    return redirect(url_for("homepage", username=session["user"]))
+            else:
+                # invalid password match
+                flash("Incorrect Username and/or Password")
+                return redirect(url_for("login"))
+
+        else:
+            # username doesn't exist
+            flash("Incorrect Username and/or Password")
+            return redirect(url_for("login"))
+
+    return render_template("login.html")
+
+
+#logout
+@app.route("/logout")
+def logout():
+    # remove user from session cookie
+    flash("You have been logged out")
+    session.pop("user")                             
+    return redirect(url_for("login"))
+
+
+#add a DFC venue
+@app.route("/add_venue", methods=["GET", "POST"])        
+def add_venue():
+    if request.method == "POST":                                     
+        venue = {                                                              
+            "venue_name": request.form.get("venuename"),
+            "venue_type": request.form.get("venuetype"),
+            "location": request.form.get("location"),
+            "description": request.form.get("description"),
+            "dog_specific_features": request.form.get("dog_specific_features"),
+            "date_visited": request.form.get("datevisited"),
+            "added_by": session["user"]                       # adding users session so that we have a record of who created it --- 
+        }
+        mongo.db.campingVenues.insert_one(venue)                             # inserting task variable into the DB
+        flash("Task Successfully Added")                            # message to user
+        return redirect(url_for("homepage"))                       # then going back  to the get_tasks function but is actually tasks.html 
+
+    venueType = mongo.db.venueType.find().sort("venue_type", 1)
+    return render_template("add_venue.html", venueType=venueType)
+
+
 #tell app how and when to run
 if __name__ == "__main__":                              
     app.run(host=os.environ.get("IP"),
