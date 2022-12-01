@@ -100,11 +100,11 @@ def add_venue():
             "description": request.form.get("description"),
             "dog_specific_features": request.form.get("dog_specific_features"),
             "date_visited": request.form.get("datevisited"),
-            "added_by": session["user"]                       # adding users session so that we have a record of who created it --- 
+            "added_by": session["user"]                       
         }
-        mongo.db.campingVenues.insert_one(venue)                             # inserting task variable into the DB
-        flash("Thanks for adding a venue")                            # message to user
-        return redirect(url_for("homepage"))                       # then going back  to the get_tasks function but is actually tasks.html 
+        mongo.db.campingVenues.insert_one(venue)                            
+        flash("Thanks for adding a venue")                           
+        return redirect(url_for("homepage"))                       
 
     venueType = mongo.db.venueType.find().sort("venue_type", 1)
     return render_template("add_venue.html", venueType=venueType)
@@ -114,8 +114,45 @@ def add_venue():
 @app.route("/list_venues")
 def list_venues():                            #function
     venues = list(mongo.db.campingVenues.find())            
-    return render_template("list_venues.html", venues=venues)       
+    return render_template("list_venues.html", venues=venues) 
 
+
+#add a Venue Type
+@app.route("/add_venuetype", methods=["GET", "POST"])        
+def add_venuetype():
+    if request.method == "POST":                                     
+        venuetype = {                                                              
+            "venue_type": request.form.get("venuetype"),
+            "added_by": session["user"]                      
+        }
+        mongo.db.venueType.insert_one(venuetype)                             
+        flash("Thanks for adding a venue type")                            
+        return redirect(url_for("add_venuetype"))                       
+
+    venueType = mongo.db.venueType.find().sort("venue_type", 1)
+    return render_template("add_venuetype.html", venueType=venueType)
+
+
+#Edit a DFC venue
+@app.route("/edit_venue/<venue_id>", methods=["GET", "POST"])     # How does it know the venue id ???????where is this defined ??    
+def edit_venue(venue_id):
+    if request.method == "POST":                                     
+        submit = { "$set":{                                                              
+            "venue_name": request.form.get("venuename"),
+            "venue_type": request.form.get("venuetype"),
+            "location": request.form.get("location"),
+            "description": request.form.get("description"),
+            "dog_specific_features": request.form.get("dog_specific_features"),
+            "date_visited": request.form.get("datevisited"),
+            #"added_by": session["user"]                       
+        }}
+        mongo.db.campingVenues.update_one({"_id": ObjectId(venue_id)}, submit)    ## is venue_id being created here ??? to be passed                          
+        flash("Venue Updated !")                           
+        return redirect(url_for("list_venues"))                       
+      
+    venue = mongo.db.campingVenues.find_one({"_id": ObjectId(venue_id)})        ## or is it being created here venue_id being created here ??? to be passed   
+    venueType = mongo.db.venueType.find().sort("venue_type", 1)
+    return render_template("edit_venue.html", venue=venue, venueType=venueType)
 
 #tell app how and when to run
 if __name__ == "__main__":                              
