@@ -23,11 +23,19 @@
         <ul class="nav nav-pills">
           <li class="nav-item"><a href="{{ url_for('homepage') }}" class="nav-link active" aria-current="page">Home</a></li>
           <li class="nav-item"><a href="{{ url_for('list_venues') }}" class="nav-link">Search</a></li>
-          <li class="nav-item"><a href="{{ url_for('register') }}" class="nav-link">Register</a></li>
-          <li class="nav-item"><a href="{{ url_for('login') }}" class="nav-link">Login</a></li>
-          <li class="nav-item"><a href="{{ url_for('add_venue') }}" class="nav-link">Add a Venue</a></li>
-          <li class="nav-item"><a href="{{ url_for('logout') }}" class="nav-link">Log out</a></li>
-          <li class="nav-item"><a href="{{ url_for('add_venuetype') }}" class="nav-link">Add Venue Type</a></li>
+          
+          
+            {% if session.user %}	
+                <li class="nav-item"><a href="{{ url_for('add_venue') }}" class="nav-link">Add a Venue</a></li>
+                <li class="nav-item"><a href="{{ url_for('myprofile',username=session['user']) }}" class="nav-link">My Profile</a></li>
+                <li class="nav-item"><a href="{{ url_for('logout') }}" class="nav-link">Log out</a></li>
+                    {% if session.user|lower =="admin"|lower %}	
+                        <li class="nav-item"><a href="{{ url_for('add_venuetype') }}" class="nav-link">Add Venue Type</a></li>
+                    {% endif %}
+            {% else %}	         
+                <li class="nav-item"><a href="{{ url_for('register') }}" class="nav-link">Register</a></li>
+                <li class="nav-item"><a href="{{ url_for('login') }}" class="nav-link">Login</a></li> 
+            {% endif %}                 
         </ul>
       </header>
     </div>

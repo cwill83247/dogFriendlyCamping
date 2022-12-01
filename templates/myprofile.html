@@ -7,17 +7,24 @@
   <div class="container">
     <div class="py-5 text-center">
       <img class="d-block mx-auto mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+      <h2>{{ username }} Profile </h2>
+
+      <p>Profile bit for the user </p>
+
+      <p>display one ones created by the user below with an edit and delete option</p>
       <h2>Find Dog Friendly Camping</h2>
       {% for venue in venues %}
-        <h2>{{ venue.venue_name }}</h2>
-        <p>{{ venue.venue_type }}</p>
+       <p>some text</p> 
                                                                       <!-- do i leave search page for just results and use a Prpfile page for a user to edit there own -->
         {% if session.user|lower == venue.added_by|lower %}              <!--- logic to only show edit for users whos task it is-->
+        <h2>{{ venue.venue_name }}</h2>
+        <p>{{ venue.venue_type }}</p>
             <a href="" class="btn-small green accent-4">Delete</a>
             <a href="{{ url_for('edit_venue', venue_id=venue._id) }}" class="btn-small light-blue lighten-1">Edit</a>
         {% endif %}
 
 
       {%endfor%}  
+     
 
 {% endblock %}     

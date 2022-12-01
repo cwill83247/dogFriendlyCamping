@@ -11,13 +11,15 @@ if os.path.exists("env.py"):
     import env
 
 #flask instance called app
-app = Flask(__name__)                   
+app = Flask(__name__)   
+
 #Creating DB Connection
 app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")   
 app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
 app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)     
+
 
 #homepage
 @app.route("/")
@@ -80,6 +82,16 @@ def login():
     return render_template("login.html")
 
 
+#users profile
+@app.route("/myprofile/<username>", methods=["GET", "POST"])
+def myprofile(username):
+    venues = list(mongo.db.campingVenues.find())   
+    #getting the session user 's username from the db
+    username =mongo.db.users.find_one(
+        {"username": session["user"]})["username"]
+    return render_template("myprofile.html", username=username, venues=venues)       # if above is true then return prpfile otherwise return login
+   
+  
 #logout
 @app.route("/logout")
 def logout():
