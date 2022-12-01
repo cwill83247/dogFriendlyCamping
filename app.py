@@ -166,6 +166,14 @@ def edit_venue(venue_id):
     venueType = mongo.db.venueType.find().sort("venue_type", 1)
     return render_template("edit_venue.html", venue=venue, venueType=venueType)
 
+
+@app.route("/delete_venue/<venue_id>")
+def delete_venue(venue_id):
+    mongo.db.campingVenues.delete_one({"_id": ObjectId(venue_id)})
+    flash("Successfully Deleted")
+    return redirect(url_for("list_venues"))
+
+
 #tell app how and when to run
 if __name__ == "__main__":                              
     app.run(host=os.environ.get("IP"),
