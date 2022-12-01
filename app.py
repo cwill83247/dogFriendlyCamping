@@ -103,11 +103,18 @@ def add_venue():
             "added_by": session["user"]                       # adding users session so that we have a record of who created it --- 
         }
         mongo.db.campingVenues.insert_one(venue)                             # inserting task variable into the DB
-        flash("Task Successfully Added")                            # message to user
+        flash("Thanks for adding a venue")                            # message to user
         return redirect(url_for("homepage"))                       # then going back  to the get_tasks function but is actually tasks.html 
 
     venueType = mongo.db.venueType.find().sort("venue_type", 1)
     return render_template("add_venue.html", venueType=venueType)
+
+
+#list the campsites
+@app.route("/list_venues")
+def list_venues():                            #function
+    venues = list(mongo.db.campingVenues.find())            
+    return render_template("list_venues.html", venues=venues)       
 
 
 #tell app how and when to run
