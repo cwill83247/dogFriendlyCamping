@@ -27,6 +27,14 @@ def homepage():
     return render_template("index.html")
 
 
+#search 
+@app.route("/search", methods=["GET", "POST"])   
+def search():                                       
+    userssearch = request.form.get("userssearch")            
+    venues = list(mongo.db.campingVenues.find({"$text": {"$search": userssearch}}))    
+    return render_template("list_venues.html", venues=venues) 
+
+
 #register
 @app.route("/register", methods=["GET", "POST"])
 def register():

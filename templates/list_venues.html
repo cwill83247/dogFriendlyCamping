@@ -8,21 +8,32 @@
     <div class="py-5 text-center">
       <img class="d-block mx-auto mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
       <h2>Find Dog Friendly Camping</h2>
-      {% for venue in venues %}
-        <h2>{{ venue.venue_name }}</h2>
-        <p>{{ venue.venue_type }}</p>
-                                                                      <!-- do i leave search page for just results and use a Prpfile page for a user to edit there own -->
-        {% if session.user|lower == venue.added_by|lower %}              <!--- logic to only show edit for users whos task it is-->
-            <a href="" class="btn-small green accent-4">Delete</a>
-            <a href="{{ url_for('edit_venue', venue_id=venue._id) }}" class="btn-small light-blue lighten-1">Edit</a>
-        {% endif %}
+
+      <!---Search Box -->
+<div class="row">
+  <form action="{{ url_for('search') }}" method="post" class="col s12">    <!--calls search function-->
+      <div class="row valign-wrapper center-align">
+          <div class="input-field col s12 m8">
+              <i class="fas fa-search prefix light-blue-text text-darken-4"></i>    <!--from font awesome-->
+              <input type="text" name="userssearch" id="userssearch" minlength="3" class="validate" required>
+              <label for="userssearch">Search for:</label>
+          </div>
+          <div class="col s12 m4">
+              <a href="{{ url_for('list_venues') }}">Show All</a>
+              <button type="submit" >
+                  <i class="fas fa-search left"></i> Search
+              </button>
+          </div>
+      </div>
+  </form>
+</div>
 
 
-      {%endfor%}  
+
 <section id="venues" class="venues section-bg">
   <div class="container aos-init aos-animate" data-aos="fade-up">
     <div class="section-header">
-      <h2>Dog Friendly Camping Venues</h2>
+     
       <p></p>
       <p></p>
       </div>
@@ -30,16 +41,23 @@
         {% for venue in venues %}
         <div class="col-lg-4 col-md-6 d-flex align-items-stretch aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
           <div class="venue-member">
-            <div class="member-img"> <img src="/static/images/venueimageplaceholder.fw.png" class="img-fluid" alt="">
-              <div class="social"> <a href=""><i class="bi bi-twitter"></i></a> <a href=""><i class="bi bi-facebook"></i></a> <a href=""><i class="bi bi-instagram"></i></a> <a href=""><i class="bi bi-linkedin"></i></a></div>
+            <div class="member-img">
+              {% if venue.venue_image_url|length > 0 %}                                         
+                <img src="{{ venue.venue_image_url }}" class="img-fluid" alt="">
+              {% else %}
+                <img src="/static/images/venueimageplaceholder2.fw.png" class="img-fluid" alt="">
+              {% endif %}
+           <div class="social"> <a href=""><i class="bi bi-twitter"></i></a> <a href=""><i class="bi bi-facebook"></i></a> <a href=""><i class="bi bi-instagram"></i></a> <a href=""><i class="bi bi-linkedin"></i></a></div>
             </div>
             <div class="member-info"><h4>{{ venue.venue_name }}</h4> <span>{{ venue.venue_type }}</span>
-              <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
+              <p>{{ venue.description }}</p>
+              <p>Dog Specific Features: {{ venue.dog_specific_features }}</p>
+              <p>Date Visited: {{ venue.date_visited }}</p>
             </div>
           </div>
         </div>
         {%endfor%} 
-       
+      
 
 
 {% endblock %}     

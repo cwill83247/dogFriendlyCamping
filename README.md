@@ -5,3 +5,7 @@ Tent Outline - http://clipart-library.com/tent-outline-cliparts.html
 Dog Cartoon Face  - https://www.gograph.com/vector-clip-art/dog-face.html
 
 Edited using Adobe Fireworks
+
+Search Index
+Dont forget to add a bit about createing searhc index within gitpod, using python for the campingVenues collection
+restricted to the fields venue_name, location, description and tags
