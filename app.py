@@ -175,12 +175,35 @@ def edit_venue(venue_id):
     return render_template("edit_venue.html", venue=venue, venueType=venueType)
 
 
+#delete venue
 @app.route("/delete_venue/<venue_id>")
 def delete_venue(venue_id):
     mongo.db.campingVenues.delete_one({"_id": ObjectId(venue_id)})
     flash("Successfully Deleted")
     return redirect(url_for("list_venues"))
 
+#Edit Venue Type
+@app.route("/edit_venuetype/<venueType_id>", methods=["GET", "POST"])     # How does it know the venue Type id ???????where is this defined ??    
+def edit_venuetype(venueType_id):
+    if request.method == "POST":                                     
+        submit = { "$set":{                                                              
+            "venue_type": request.form.get("venuetype")
+                        
+        }}
+        mongo.db.venueType.update_one({"_id": ObjectId(venueType_id)}, submit)                       
+        flash("Updated !")                           
+        return redirect(url_for("add_venuetype"))                       
+      
+    venueType = mongo.db.venueType.find_one({"_id": ObjectId(venueType_id)})  
+    return render_template("edit_venuetype.html", venueType=venueType)
+
+
+#delete venue type
+@app.route("/delete_venuetype/<venueType_id>")
+def delete_venuetype(venueType_id):
+    mongo.db.venueType.delete_one({"_id": ObjectId(venueType_id)})
+    flash("Successfully Deleted")
+    return redirect(url_for("add_venuetype"))
 
 #tell app how and when to run
 if __name__ == "__main__":                              

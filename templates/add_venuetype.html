@@ -7,29 +7,53 @@
   <div class="container">
     <div class="py-5 text-center">
       <img class="d-block mx-auto mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
-      <h2>Add Venue Type</h2>
+      <h2>Add/Edit/Delete Venue Type</h2>
       <p class="lead">Admins ONLY !!</p>
     </div>
 
    
-      <div class="col-md-8 order-md-1">
-        <h4 class="mb-3">Add Venue Information</h4>
+      <div class="col-md-3 order-md-1">
+        <h4 class="mb-3">Add Venue Type</h4>
         <form class="needs-validation" method="POST" action="{{ url_for('add_venuetype') }}" novalidate>
           <div class="row">
-            <div class="mb-3">
               <label for="venuetype">Add a Venue Type</label>
               <input type="text" class="form-control" id="venuetype" name="venuetype" placeholder="" value="" required>
               <div class="invalid-feedback">
                  is required.
               </div>
             </div>
-          
-          <hr class="mb-4">
+            <hr class="mb-4">
+         
           <button class="btn btn-primary btn-lg btn-block" type="submit">Add</button>
-        </form>
+          </form>
+          
       </div>
     </div>
 
+    <table class="table table-striped">
+      <thead>
+    <tr>
+      <th scope="col">Venue Type</th>
+      <th scope="col"></th>
+      <th scope="col"></th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    {% for venueType in venueType %}
+    <tr>
+      
+      <td>{{ venueType.venue_type }}</td>
+      <td><a href="{{ url_for('edit_venuetype', venueType_id=venueType._id) }}" class="btn btn-primary">Edit</a></td>
+      <td><td><a href="{{ url_for('delete_venuetype', venueType_id=venueType._id) }}" class="btn btn-danger">Delete</a></td></td>
+     </tr>
+     {% endfor %}
+    <tr>
+      
+     
+  </tbody>
+
+  </table>
     <footer class="my-5 pt-5 text-muted text-center text-small">
       <p class="mb-1">&copy; 2017-2018 Company Name</p>
       <ul class="list-inline">
