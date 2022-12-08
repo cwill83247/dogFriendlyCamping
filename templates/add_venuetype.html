@@ -11,7 +11,8 @@
       <p class="lead">Admins ONLY !!</p>
     </div>
 
-   
+
+
       <div class="col-md-3 order-md-1">
         <h4 class="mb-3">Add Venue Type</h4>
         <form class="needs-validation" method="POST" action="{{ url_for('add_venuetype') }}" novalidate>
@@ -45,15 +46,34 @@
       
       <td>{{ venueType.venue_type }}</td>
       <td><a href="{{ url_for('edit_venuetype', venueType_id=venueType._id) }}" class="btn btn-primary">Edit</a></td>
-      <td><td><a href="{{ url_for('delete_venuetype', venueType_id=venueType._id) }}" class="btn btn-danger">Delete</a></td></td>
-     </tr>
-     {% endfor %}
-    <tr>
-      
-     
-  </tbody>
-
-  </table>
+      <td><a href="{{ url_for('delete_venuetype', venueType_id=venueType._id) }}" class="btn btn-danger">Delete</a></td>
+      <td><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal {{venueType_id}}">xyz</button></td>
+        
+         
+    
+<!-- Confirm Deletion Modal -->
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="deleteModalLabel">Confirm Delete</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Are you want to delete ? Please click delete to remove record
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" >Cancel</button>
+        <a href="{{ url_for('delete_venuetype', venueType_id=venueType._id) }}" class="btn btn-danger">Delete</a>
+        
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %}
+</tr>
+</tbody>
+</table>
     <footer class="my-5 pt-5 text-muted text-center text-small">
       <p class="mb-1">&copy; 2017-2018 Company Name</p>
       <ul class="list-inline">
