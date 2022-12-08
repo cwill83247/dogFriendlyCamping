@@ -1,4 +1,24 @@
 
+header {
+  background-color: rgb(66, 65, 65);
+}
+
+.nav-pills{
+  color:blueviolet;
+  --bs-nav-pills-link-active-bg:rgb(226, 43, 128);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+ 
+ }
+.nav-pills:hover{
+  color:blueviolet;
+  --bs-nav-pills-link-active-bg:rgb(43, 226, 67);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  
+ 
+ }
+
+
 /* 
 CSS orignal source adapted from: 
 Template Name: Yummy
