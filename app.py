@@ -120,6 +120,7 @@ def add_venue():
             "description": request.form.get("description"),
             "dog_specific_features": request.form.get("dog_specific_features"),
             "date_visited": request.form.get("datevisited"),
+            "venue_image_url": request.form.get("image_url"),
             "added_by": session["user"]                       
         }
         mongo.db.campingVenues.insert_one(venue)                            
@@ -164,7 +165,8 @@ def edit_venue(venue_id):
             "description": request.form.get("description"),
             "dog_specific_features": request.form.get("dog_specific_features"),
             "date_visited": request.form.get("datevisited"),
-            #"added_by": session["user"]                       
+            "venue_image_url": request.form.get("image_url")
+                                
         }}
         mongo.db.campingVenues.update_one({"_id": ObjectId(venue_id)}, submit)    ## is venue_id being created here ??? to be passed                          
         flash("Venue Updated !")                           

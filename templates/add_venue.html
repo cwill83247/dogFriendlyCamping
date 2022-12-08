@@ -17,14 +17,14 @@
         <form class="needs-validation" method="POST" action="{{ url_for('add_venue') }}" novalidate>
           <div class="row">
             <div class="mb-3">
-              <label for="venuename">Venue Name</label>
+              <label for="venuename">Venue Name<span class="text-muted">(Required)</span></label>
               <input type="text" class="form-control" id="firstName" name="venuename" placeholder="" value="" required>
               <div class="invalid-feedback">
                  is required.
               </div>
             </div>
             <div class="mb-3">
-              <label for="venuetype">Select Type</label>
+              <label for="venuetype">Select Type<span class="text-muted">(Required)</span></label>
               <select id="venuetype" name="venuetype" class="custom-select d-block w-100"   required>
                 <option value="" disabled selected>Choose...</option> 
                 {% for venue in venueType %}
@@ -36,7 +36,7 @@
               </div>
             </div>
             <div class="mb-3">
-            <label for="location">Location:<span class="text-muted">(Optional)</span></label>
+            <label for="location">Location:<span class="text-muted">(Required)</span></label>
             <input type="text" class="form-control" id="location" name="location" placeholder="" required>
             <div class="invalid-feedback">
               Please add a location.
@@ -44,32 +44,38 @@
           </div>
 
           <div class="mb-3">
-            <label for="datevisited">Date Visited:</label>
+            <label for="datevisited">Date Visited:<span class="text-muted">(Required)</span></label>
             <input type="text" class="form-control" id="datevisited" name="datevisited" placeholder="" required>
             <div class="invalid-feedback">
               Please enter when you visited.
             </div>
           </div>
-
           <div class="mb-3">
-            <label for="description">Describe the Venue<span class="text-muted">(Optional)</span></label>
-            <input type="text" class="form-control" id="description" name="description" placeholder="Apartment or suite" required>
+            <label for="description">Describe the Venue<span class="text-muted">(Required)</span></label>
+            <textarea class="form-control" id="description" name="description" rows="4" cols="50" placeholder="" required>
+              
+            </textarea>
             <div class="invalid-feedback">
               Please give a description of the venue.
             </div>
-          </div>
-          <div class="mb-3">
+           <div class="mb-3">
             <label for="dog_specific_features">What made it great for Dogs?<span class="text-muted">(Optional)</span></label>
             <input type="text" class="form-control" id="dog_specific_features" name="dog_specific_features" placeholder="for example - Did it have a seperate dog walking area ?" >
           </div>
           <div class="mb-3">
-            <label for="tags">Add Tags that will help people searrch<span class="text-muted">(Optional)</span></label>
+            <label for="tags">Add Tags that will help people search<span class="text-muted">(Optional)</span></label>
             <input type="text" class="form-control" id="tags" name="tags" placeholder="#Dog Walking Area #Off Lead Area #Dog Shower" required>
             <div class="invalid-feedback">
               Please add at least 1 tag to help people when searching.
             </div>
           </div>
-
+          <div class="mb-3">
+            <label for="image_url">Image URL<span class="text-muted">(Optional)</span></label>
+            <input type="text" class="form-control" id="image_url" name="image_url" placeholder="please include the full address including http:// or https://" required>
+            <div class="invalid-feedback">
+              image url incorrect format.
+            </div>
+          </div>
          
           <hr class="mb-4">
           <button class="btn btn-primary btn-lg btn-block" type="submit">Add</button>
