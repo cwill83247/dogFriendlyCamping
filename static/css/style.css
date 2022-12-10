@@ -1,18 +1,23 @@
 
+/***  Dog Friendly Camping CSS ***/
+/***  Chris Williams -2022     ***/
 
 /**override bootstrap nav bar  **/
 .mb-4 {
   margin-bottom: 0px !important;
 }
+
+
+
 /** override boostrap button **/
 .btn-primary {
   margin-top:1rem;
   --bs-btn-color: #fff;
   --bs-btn-bg: #2C4653;
-  --bs-btn-border-color: #0d6efd;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #0b5ed7;
-  --bs-btn-hover-border-color: #0a58ca;
+  --bs-btn-border-color: #2C4653;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #E19032;
+  --bs-btn-hover-border-color:#E19032;
   --bs-btn-focus-shadow-rgb: 49,132,253;
   --bs-btn-active-color: #fff;
   --bs-btn-active-bg: #0a58ca;
@@ -25,7 +30,7 @@
 
 /**override navbar **/
 .text-bg-dark {
-  background-color: #2C4653!important;
+  background-color: #8E9AA3!important;
 }
 
 /**override position of nav and search text **/
@@ -33,8 +38,9 @@
   margin-right:auto!important;
 }
 
+
 #logo-banner {
-  background-color:#3C3C3C;
+  background-color:#8E9AA3;
   margin-top: 0px;
   
   
@@ -45,7 +51,25 @@
   margin-right:0px auto;
   position:relative;
     
-  }  
+  } 
+  
+.login-panel {
+  max-width:420px;
+  margin: 0 auto 1.5rem;
+  border-radius:8px;
+  padding:1rem 6rem;
+  background-color: #0a53be;
+
+} 
+.nav-link{
+  font-family:'Poppins',sans-serif;
+  letter-spacing:0.2rem;
+}
+.nav-link:hover {
+  font-size:larger;
+  text-decoration: underline 3px ;
+
+}
 /**background header image credit: Fireship - adapted form https://www.youtube.com/watch?v=lPJVi797Uy0 **/
   .spacer {
     aspect-ratio: 1200/100;
@@ -53,7 +77,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding-bottom:9rem;
+    padding-bottom:8rem;
+    
   }
 
  .layer1 {
@@ -61,7 +86,10 @@
 
  } 
 /*** end credit  **/
-
+.flash-messages {
+  color:red;
+  text-align: center;
+  }
 
 .nav-pills{
   color:blueviolet;

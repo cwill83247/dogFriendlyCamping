@@ -6,15 +6,14 @@
 
   <div class="container">
     <div class="py-5 text-center">
-      <img class="d-block mx-auto mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
       <h2>Add a Dog Friendly Venue</h2>
-      <p class="lead">Below is an example form built entirely with Bootstrap's form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
+      <p class="lead">Please add as much information as you can to help fellow members, and thank you for contributing</p>
     </div>
 
    
       <div class="col-md-8 order-md-1">
         <h4 class="mb-3">Add Venue Information</h4>
-        <form class="needs-validation" method="POST" action="{{ url_for('add_venue') }}" novalidate>
+        <form class="row g-3" method="POST" action="{{ url_for('add_venue') }}" novalidate>
           <div class="row">
             <div class="mb-3">
               <label for="venuename">Venue Name<span class="text-muted">(Required)</span></label>
