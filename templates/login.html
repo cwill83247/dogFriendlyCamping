@@ -4,28 +4,22 @@
 
 
 
-<div class="col-md-8 order-md-1">
-    <h4 class="mb-3">Login</h4>
-    <p>Please Enter your Username and Password below:</p>
-    <form class="needs-validation" novalidate method="POST" action="{{ url_for('login') }}">
-      <div class="row">
-        <div class="col-md-6 mb-3">
-          <label for="username">Username</label>
-          <input type="text" class="form-control" name="username" id="username" placeholder="" value="" required>
+    
+    <form class="form-signin" method="POST" action="{{ url_for('login') }}">
+      <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+            <label for="username" class="sr-only">Username</label>
+          <input type="text" class="form-control" name="username" id="username" placeholder="Enter Username" value="" required>
           <div class="invalid-feedback">
             Valid username is required.
           </div>
-        </div>
-        <div class="col-md-6 mb-3">
-          <label for="password"><i class="fas fa-user-lock prefix light-blue-text text-darken-4"></i> Password</label>
-          <input type="text" class="form-control" name="password" id="password" placeholder="" value="" required>
+          <label for="password" class="sr-only"> Password</label>
+          <input type="text" class="form-control" name="password" id="password" placeholder="Enter Password" value="" required>
           <div class="invalid-feedback">
             password invalid.
-          </div>
-          
-        </div>
+          </div>        
+        
       </div>
-
       <button class="btn btn-primary btn-lg btn-block" type="submit">Login</button>
 </form>
+</div>
 {% endblock %}

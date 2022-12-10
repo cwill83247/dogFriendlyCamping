@@ -29,11 +29,15 @@ def homepage():
 
 #search 
 @app.route("/search", methods=["GET", "POST"])   
-def search():                                       
+def search():                                     
     userssearch = request.form.get("userssearch")            
     venues = list(mongo.db.campingVenues.find({"$text": {"$search": userssearch}}))    
-    return render_template("list_venues.html", venues=venues) 
+    
+    if len(venues) > 0 :
+        return render_template("list_venues.html", venues=venues) 
 
+    flash("Sorry no results found please try again")
+    return redirect(url_for("list_venues")) 
 
 #register
 @app.route("/register", methods=["GET", "POST"])

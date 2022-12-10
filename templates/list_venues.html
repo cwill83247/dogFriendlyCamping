@@ -5,18 +5,19 @@
 <body class="bg-light">
 
   <div class="container">
-    <div class="py-5 text-center">
-      <img class="d-block mx-auto mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+    <div class="py-5">
+      
       <h2>Find Dog Friendly Camping</h2>
 
       <!---Search Box -->
 <div class="row">
   <form action="{{ url_for('search') }}" method="post" class="col s12">    <!--calls search function-->
       <div class="row valign-wrapper center-align">
-          <div class="input-field col s12 m8">
+        <label for="userssearch">Search:</label>  
+        <div class="input-field col s12 m8">
               <i class="fas fa-search prefix light-blue-text text-darken-4"></i>    <!--from font awesome-->
               <input type="text" name="userssearch" id="userssearch" minlength="3" class="validate" required>
-              <label for="userssearch">Search for:</label>
+              
           </div>
           <div class="col s12 m4">
               <a href="{{ url_for('list_venues') }}">Show All</a>

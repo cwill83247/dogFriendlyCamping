@@ -4,6 +4,34 @@
 .mb-4 {
   margin-bottom: 0px !important;
 }
+/** override boostrap button **/
+.btn-primary {
+  margin-top:1rem;
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #2C4653;
+  --bs-btn-border-color: #0d6efd;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #0b5ed7;
+  --bs-btn-hover-border-color: #0a58ca;
+  --bs-btn-focus-shadow-rgb: 49,132,253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #0a58ca;
+  --bs-btn-active-border-color: #0a53be;
+  --bs-btn-active-shadow: inset 0 3px 5pxrgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #0d6efd;
+  --bs-btn-disabled-border-color: #0d6efd;
+}
+
+/**override navbar **/
+.text-bg-dark {
+  background-color: #2C4653!important;
+}
+
+/**override position of nav and search text **/
+.me-lg-auto {
+  margin-right:auto!important;
+}
 
 #logo-banner {
   background-color:#3C3C3C;
@@ -16,7 +44,7 @@
   margin-left:0px auto;
   margin-right:0px auto;
   position:relative;
-  
+    
   }  
 /**background header image credit: Fireship - adapted form https://www.youtube.com/watch?v=lPJVi797Uy0 **/
   .spacer {
