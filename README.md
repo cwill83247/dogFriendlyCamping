@@ -4,6 +4,13 @@ Dog Cartoon Image - http://clipart-library.com/clipart/dog-clip-art-27.htm
 Tent Outline - http://clipart-library.com/tent-outline-cliparts.html
 Dog Cartoon Face  - https://www.gograph.com/vector-clip-art/dog-face.html
 
+https://looka.com/ INITIAL LOGO DESIGN IDEA, and then deisgned using Fireworks
+
+
+https://www.youtube.com/watch?v=lPJVi797Uy0  SVG Design for Peaks
+
+https://app.haikei.app/  to create SVG
+
 Edited using Adobe Fireworks
 
 Search Index
