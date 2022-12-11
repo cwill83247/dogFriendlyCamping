@@ -2,13 +2,13 @@
 ## ADD IMAGE of screens ----- 
 
 # Purpose
-The purpose of this site, is to provide a front end to a searchable database of dog friendly camping venues. It is intedned to allow users to register, login and add camping vanues that are suitable for dogs
-It is intended to demonstrate some of the skills I have learnt, in HTML,CSS, Javascript, Python, JINJA templating and MongoDB to meet the criteria of milestone 3
+The purpose of this site, is to provide a front end to a searchable database of dog friendly camping venues. It is intended to allow users to register, login and add camping venues that are suitable for dogs
+It is intended to demonstrate some of the skills I have learnt, in HTML,CSS, Javascript, Python,Flask, JINJA templating and MongoDB to meet the criteria of milestone 3
 
-The site is aimed at Adults of all ages, the idea was inspired by the addition fo a dog to the family, and need to find venues/sites that allow dogs. 
+The site is aimed at Adults of all ages, the idea was inspired by the addition of a dog to the family, and need to find camping venues/sites that allow dogs. 
 
 # Live Site
-The live site is published here using github pages - https://cwill83247.github.io/mufccardgame/
+The live site is published here using Heroku - https://dogfriendlycamping.herokuapp.com/
 
 # User Experience Design
 First Time Visitor Goals
