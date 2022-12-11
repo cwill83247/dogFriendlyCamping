@@ -20,7 +20,7 @@ First Time Visitor Goals
 
 
 Returning Visitor Goals
--	As a returning visitor I want to be able to loginto the site easily
+-	As a returning visitor I want to be able to log into the site easily
 -	As a returning visitor I want to find venues i have added easily
 -	As a returning visitor I want to Create, Update and delete venues linked to me.
 
@@ -126,23 +126,16 @@ The Lighthouse, W3C Markup Validator,and the Lighthouse report were used to dete
 ##	First time visitor goals
 - As a first time user I need to quickly and easily understand the purpose of the site.
 --	The theme of the site is easily identifiable, and the purpose clearly displayed, the design is clean and simple with focus on the users experience.
-
--	As a first time user I need to be able to understand how to play the game.
---	The instructions are clearly displayed, and when the page initially loads the focus is on the instructions rather than the game.
 ![initial screen](https://dogfriendlycamping.herokuapp.com/static/images/userstory1.fw.png)
--	As a first time user I need to be able to view the website clearly on both tablet and mobile, as well as desktop.
---	The game is easy to play on all screen sizes, and devices ensuring it is enjoyable to play.
 
-- As a first time user I need to be able to find the game intuitive.
--- The game is very intuitive, it is clear it is about Manchester United, and the aim of the game is to match players. Feedback is good from the game.
-![game area](https://github.com/cwill83247/mufccardgame/blob/main/assets/images/gamearea.PNG)
-- As a first time user I need to have feedback on how I have done in the game.
--- The game clearly shows the counter, counting down, the number of cards matched and at the end of the game provided information on how I have done.
-![modal](https://github.com/cwill83247/mufccardgame/blob/main/assets/images/modalpopup.PNG)
+-	As a first time user I need to be able to navigate the site easily.
+--	navigation is clear and consistent throughout the site.
+
+
 ## Returning Visitor Goals
 
-- As a returning visitor I want to be able to start the game quickly
--- New game options, and restart options are clearly visible.
+- As a returning visitor I want to be able to log into the site easily
+-- logging int othe site is quick and easy with clear messages.
 ![timer and score]("https://github.com/cwill83247/mufccardgame/blob/main/assets/images/timer and score.PNG")
 - As a returning visitor I want to find the game equally challenging
 -- The cards are always displayed in random positions, so its always equally challenging.
