@@ -136,7 +136,7 @@ The Lighthouse, W3C Markup Validator,and the Lighthouse report were used to dete
 
 - As a returning visitor I want to be able to log into the site easily
 -- logging int othe site is quick and easy with clear messages.
-![login page](https://dogfriendlycamping.herokuapp.com/static/images/loginscreenshot.png)
+![login page](https://dogfriendlycamping.herokuapp.com/static/images/loginscreenshot.PNG)
 - As a returning visitor I want to find the game equally challenging
 -- The cards are always displayed in random positions, so its always equally challenging.
 
