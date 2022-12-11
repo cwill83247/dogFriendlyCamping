@@ -129,7 +129,7 @@ The Lighthouse, W3C Markup Validator,and the Lighthouse report were used to dete
 
 -	As a first time user I need to be able to understand how to play the game.
 --	The instructions are clearly displayed, and when the page initially loads the focus is on the instructions rather than the game.
-![how to play]/workspace/dogFriendlyCamping/static/images/userstory1.fw.png
+!https://dogfriendlycamping.herokuapp.com/static/images/userstory1.fw.png
 -	As a first time user I need to be able to view the website clearly on both tablet and mobile, as well as desktop.
 --	The game is easy to play on all screen sizes, and devices ensuring it is enjoyable to play.
 
