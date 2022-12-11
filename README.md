@@ -1,32 +1,5 @@
-# dogFriendlyCamping
-
-Dog Cartoon Image - http://clipart-library.com/clipart/dog-clip-art-27.htm
-Tent Outline - http://clipart-library.com/tent-outline-cliparts.html
-Dog Cartoon Face  - https://www.gograph.com/vector-clip-art/dog-face.html
-
-https://looka.com/ INITIAL LOGO DESIGN IDEA, and then deisgned using Fireworks
-
-
-https://www.youtube.com/watch?v=lPJVi797Uy0  SVG Design for Peaks
-
-https://app.haikei.app/  to create SVG
-
-Edited using Adobe Fireworks
-
-Search Index
-Dont forget to add a bit about createing searhc index within gitpod, using python for the campingVenues collection
-restricted to the fields venue_name, location, description and tags
-
-Thanks
-Mentor
-Kevin @ CI Tutor Support for helpign me to get modal to delete correct record, as part of defensive deletion. 
-
-Include added defensive programming for delete
-
-#Standard and Template below 
-
 # Dog Friendly Camping 
-# ADD IMAGE
+## ADD IMAGE of screens ----- 
 
 # Purpose
 The purpose of this site, is to provide a front end to a searchable database of dog friendly camping venues. It is intedned to allow users to register, login and add camping vanues that are suitable for dogs
@@ -58,6 +31,8 @@ Pages that a registered user can view
 Pages that an unregistered user can see
 Pages that an Admin can see.
 
+The design went through several design ideas before settling on the current design, with my intial design after user research be considered amaetuer, and not fit for a professional website.
+
 The Index page has been designed as the shopfront to the site, to briefly explain what the site is about, encourage a user to register and contribute to the site.
 
 Site Navigation has been placed at the top of the page so easily identifiable, and intuitive for a vistor of the site.
@@ -67,52 +42,64 @@ A footer was added so consitent throught the site.
 
 ## Initial design Experience
 The pages have been designed to represent a brand throughout the site, be intuitive to the user, whilst focussing on the content. 
-
-I have tried to limit clutter, and to prpvide a clean look and feel int erms of design fo rthe user.
+I have tried to limit clutter, and to provide a clean look and feel in terms of design for the user.
 
 ## Colour Scheme 
-The colours used in my design were from researching other wbesites that had an outdoor intention, it seemd a common theme for them to have a darker header, with white logo. I thne used colours to compliment the intial dark grey.
+The colours used in my design were from researching other websites that had an outdoor intention, it seemed a common theme for them to have a darker header, with white logo. I then used colours to compliment the intial dark grey.
+
+## Branding
+Once the colour scheme had been identified I developed the logo ideas intially using - https://looka.com/, I then created the logo and tailored the design using Fireworks.
+The Peaks in the header were designed using https://app.haikei.app credit for the tutorial demonstrating this website - ttps://www.youtube.com/watch?v=lPJVi797Uy0
+
+Images were used for the logo design from - https://www.gograph.com/vector-clip-art/dog-face.html
 
 # ADD COLOUR PALLETTE !!!!
 
 ## Typography 
 # ADD !!!!!!!!
 
-
-## Images
-The images used in the site, are of Manchester United Players, past and present as selected by my 10 year old son.
- These are players young and old fans  will recognise. The Main Logo is the Manchester United crest which is the identity of the club. 
- 
- The images used were obtained from google images, unfortunatley due to the nature of football, none of these images were available under creative commons license. If this was a site, intended for wider consumption , then would need to purchase image rights via a site such as shutterstock.com 
-
 # Responsiveness 
-The game is intended to be quick ,and fun for all users, on desktop, Tablet or Mobile. 
+The site is intended to be quick,and intuitive for all users, on desktop, Tablet or Mobile. 
 
-The design responds to varying screen sizes, and devices, changing the layout appropriately to ensure its playable on all device formats. 
+The design responds to varying screen sizes, and devices, changing the layout appropriately to ensure its useable on all device formats. 
 
-The blocks will stack on top of each other for tablet and mobile to ensure more user friendly when they don’t have suitable screen sizes. It has been tested manually, and by viewing via Google chrome > inspect option.
+Primary responsiveness is acheived by using the Bootstrap CSS Framework.
+
 # Future developments
--	Rather than have 6 images, would like a bank of 50 images with 6 getting randomly  selected each time a game starts.
--	At the end of the game provide some fact or statistic about Manchester United.
--	Create levels of difficulty, either by having less time to match, or the images are harder to make a match.
+-	Pagination for results.
+-	Filtering options os easy to navigata as the content grows.
+-	Searchable by post code, location or via a map.
+-   Improve Design
 
 # Wireframes
-![Desktop Wireframe](https://github.com/cwill83247/mufccardgame/blob/main/assets/images/desktop-wireframe.png)
-![Tablet Wireframe](https://github.com/cwill83247/mufccardgame/blob/main/assets/images/tablet-wireframe.png)
-![Mobile Wireframe](https://github.com/cwill83247/mufccardgame/blob/main/assets/images/mobile-wireframe.png)
-
+## ADD
 
 # Deployment
-## Github Pages
-Deploying site so live using GitHub Pages
+## Heroku
+Deploying site so live using Heroku
 
-1.	Log in to GitHub and locate the GitHub Repository.
-2.	Locate the "Settings" option (top of the page).
-3.	Click on "Pages" will open "GitHub Pages" Section.
-4.	Under "Source", click the dropdown called "None" and select "Main Branch".
-5.	The page will automatically refresh.
-6.	At the top near github header to locate the now published site link
-7. The link can sometime take a while for your site to be live initally so give it 15 minutes and then use the link to see your deployed site.
+The code for this website was written in Gitpod, pushed to GitHub and was deployed using Heroku.
+
+The database used was MongoDB.
+
+The following process was used to deploy this website:
+
+1. Create a "requirements.txt" file using the command "pip3 freeze --local > requirements.txt"
+2. Create a "Procfile" using the command "echo web: python app.py > Procfile"
+3. Push these changes to your repository by using "git add -A", "git commit -m 'your commit message here'" and then "git push"
+4. Ensure you have a .gitignore file in your repository
+5. Add "env.py" and "pycache/" to your .gitignore file to ensure that no sensitive information is added to your repository
+6. Login or sign up to Heroku
+7. Click "New" on the top right of the dashboard and select "Create new app"
+8. Include an "App name", choose a region and click "Create app"
+9. Click the "Deploy" tab and under "Deployment method" select "GitHub"
+10. Search to find your GitHub repository and click "Connect". Please note: do not enable automatic deployment yet as this will cause errors
+11. Click the "Settings" tab and click "Reveal Config Vars" from Config Vars
+12. Enter the key value pairs that match those in your env.py file:
+13. Go back to the "Deploy" tab and click "Enable Automatic Deployment"
+14. In the "Deploy" tab under "Manual deploy", select "main"
+15. Click "Deploy Branch"
+16. Once the app has finished building click "Open App" to open your site.
 
 ## Cloning GitHub Repository
 1. Log in to GitHub and locate the GitHub Repository. 
@@ -122,17 +109,17 @@ Deploying site so live using GitHub Pages
 5. Change the current working directory to the location where you want the cloned directory to be made. 
 6. Type git clone, and then paste the URL you copied.
 
+
 # Testing Tools
-The Lighthouse, W3C Markup Validator, JSHint and the Lighthouse report were used to determine whether there were any errors in the code. I ensured standards were met in design, and also accessebility.
+The Lighthouse, W3C Markup Validator,and the Lighthouse report were used to determine whether there were any errors in the code. I ensured standards were met in design, and also accessebility.
 
 -	W3C Markup Validator
 -	W3C CSS Validator
 -	Lighthouse report
--	JS Hint
 
-![CSS Validation](https://github.com/cwill83247/mufccardgame/blob/main/assets/images/W3C_WSSValidation_pass.PNG)
-![Lighthouse Performance](https://github.com/cwill83247/mufccardgame/blob/main/assets/images/LighthouseViewer_Performance.PNG)
-![Lighthouse Accessebility](https://github.com/cwill83247/mufccardgame/blob/main/assets/images/LighthouseViewer_Accessebility.PNG)
+## ADD CSS Screenshot
+## ADD Lightohouse Accessebility
+## ADD Lighthouse Performance
 
 # Testing User Stories from UX Section
 ##	First time visitor goals
@@ -206,48 +193,53 @@ Testing has been a continous process, after every commit, the code was tested to
 -	GitHub: was used as my online repository to score code, commit messages and versioning
 -	GitHub Pages: was used to deploy my live site, and host my site
 -	Balsamiq: Balsamiq was used to create the wireframes during the design process.
+-   JINJA Templating
 -	Chrome developer tools: Was used to inspect code, use of console was used to debug code, screen options were used to test on different screen sizes, different devices.
-- Mockup Generator - http://techsini.com/multi-mockup/index.php
+-  Mockup Generator - http://techsini.com/multi-mockup/index.php
 
 # Credits
 ## Images
 
-- Ronaldo -  https://bleacherreport.com/articles/10012193-cristiano-ronaldo-scores-brace-in-triumphant-manchester-united-return
-- Casameiro - https://www.news.ro/sport/acord-intre-real-madrid-si-manchester-united-pentru-casemiro-1922404219182022082220825174
-- Sancho - https://www.caughtoffside.com/2021/09/30/sancho-stats-for-man-united/
-- Rooney - https://www.premierleague.com/video/single/1053627
-- Scholes - https://www.pinterest.co.uk/pin/300615343849672341/
-- Fernandes - https://www.manutd.com/en/news/detail/bruno-fernandes-exclusive-interview-before-psg-v-man-utd-on-20-october-2020
-- Club Badge/crest - https://en.wikipedia.org/wiki/Manchester_United_F.C.
 
-It is recognised due to the commercial value of Manchester United, its players and sponsors, that if this site was intended for a wider audience then images would need to be purchased with the correct licensing. 
 
 # Acknowledgements and thanks.
 
 ## Spence Bariball (Mentor)
 Helping to keep me motivated, and being supportive when felt overwhelmed. Giving great advice, and suggesting workarounds/solutions to issues.
 
-## CYC-Apr-2022 Slack group
-For generally keeping me in a good headspace.
 
-## Sean and John - Tutor Assistance
-Helping me with JEST, and in particular issues was having when testing elements that get created/updated in the DOM
-
-## Ania Kubow 
-Fantastic tutorial, and explanations for generating the cards using JavaScript - "Learn JavaScript by Building 7 Games - Full Course"
-https://www.youtube.com/watch?v=ec8vSKJuZTk&t=5449s
-
-## Bobby Hadz
-Excellent explanation in relation to removign event listener, and why may get issues.
-https://bobbyhadz.com/blog/javascript-remove-event-listener-not-working#:~:text=To%20resolve%20the%20removeEventListener%20not,will%20not%20remove%20the%20listener.
+## Tutor Assistance
+Kevin @ CI for helping me resolve an issue with defensive programming, and the r 
 
 ## Slack Community
-Had issue/errors when initally testing using JSHINT 
-https://app.slack.com/client/T0L30B202/search/search-eyJkIjoianNsaW50IiwicSI6IlUwM0FTQVFMS1BHIiwiciI6ImpzbGludCJ9/thread/C7HD37Q1F-1628782478.134000
-
-## W3 Schools
-Tutorial showing how to create a modal overlay
-https://www.w3schools.com/howto/howto_css_modals.asp
 
 
+
+
+# dogFriendlyCamping
+
+Dog Cartoon Image - http://clipart-library.com/clipart/dog-clip-art-27.htm
+Tent Outline - http://clipart-library.com/tent-outline-cliparts.html
+Dog Cartoon Face  - https://www.gograph.com/vector-clip-art/dog-face.html
+
+https://looka.com/ INITIAL LOGO DESIGN IDEA, and then deisgned using Fireworks
+
+
+https://www.youtube.com/watch?v=lPJVi797Uy0  SVG Design for Peaks
+
+https://app.haikei.app/  to create SVG
+
+Edited using Adobe Fireworks
+
+Search Index
+Dont forget to add a bit about createing searhc index within gitpod, using python for the campingVenues collection
+restricted to the fields venue_name, location, description and tags
+
+Thanks
+Mentor
+Kevin @ CI Tutor Support for helpign me to get modal to delete correct record, as part of defensive deletion. 
+
+Include added defensive programming for delete
+
+#Standard and Template below 
 
