@@ -169,7 +169,10 @@ The Lighthouse, W3C Markup Validator,and the Lighthouse report were used to dete
 Testing has been a continous process, after every commit, the code was tested to ensure the game functioned as expected.
 
 # Errors and Bugs
--ADD !!!!!! 
+- Contrast issues identifed by Lighthouse Accessebility
+changed the navigation bar colours so more of a contrast.
+
+- another isues
 
 # Validation
 
