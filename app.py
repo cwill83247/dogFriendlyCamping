@@ -129,7 +129,7 @@ def add_venue():
         }
         mongo.db.campingVenues.insert_one(venue)                            
         flash("Thanks for adding a venue")                           
-        return redirect(url_for("homepage"))                       
+        return redirect(url_for("add_venue"))                       
 
     venueType = mongo.db.venueType.find().sort("venue_type", 1)
     return render_template("add_venue.html", venueType=venueType)

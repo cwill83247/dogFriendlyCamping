@@ -7,7 +7,7 @@
   <div class="container">
     <div class="py-5">
       
-      <h2>Find Dog Friendly Camping</h2>
+      <h1 class="display-5 fw-bold lh-1 mb-3">Find Dog Friendly Camping</h1>
 
       <!---Search Box -->
 <div class="row">
@@ -15,16 +15,17 @@
       <div class="row valign-wrapper center-align">
         <label for="userssearch">Search:</label>  
         <div class="input-field col s12 m8">
-              <i class="fas fa-search prefix light-blue-text text-darken-4"></i>    <!--from font awesome-->
-              <input type="text" name="userssearch" id="userssearch" minlength="3" class="validate" required>
               
-          </div>
+              <input type="text" name="userssearch" id="userssearch" minlength="3" class="validate" required>
+              <i class="fas fa-search prefix light-blue-text text-darken-4"></i>    <!--from font awesome-->
+          <div class="search-padding">
           <div class="col s12 m4">
               <button type="submit" >
                   <i class="fas fa-search left"></i> Search
               </button>
               <a href="{{ url_for('list_venues') }}">Show All</a>
           </div> 
+        </div>
       </div>
   </form>
 </div>

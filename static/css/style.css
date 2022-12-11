@@ -58,8 +58,7 @@
   margin: 0 auto 1.5rem;
   border-radius:8px;
   padding:1rem 6rem;
-  background-color: #0a53be;
-
+  
 } 
 .nav-link{
   font-family:'Poppins',sans-serif;
@@ -87,9 +86,14 @@
  } 
 /*** end credit  **/
 .flash-messages {
-  color:red;
+  color:#2C4653;
   text-align: center;
   }
+
+.search-padding{
+  padding-top:0.2rem;
+  padding-bottom:1rem;
+}  
 
 .nav-pills{
   color:blueviolet;
