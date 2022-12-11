@@ -42,10 +42,21 @@ A footer was added so consitent throught the site.
 
 ## Database Design
 
-MongoDB was used as a non relational database, to hold the collections as listed below: 
+MongoDB was used as a non relational database, to hold the collections as listed below, they were stored in a DB "dog_friendly_camping" 
 
+# Structure 
+![db schema](https://dogfriendlycamping.herokuapp.com/static/images/dbschema.png)
 
-ADD IMAGE!!!!!!!
+- users (Collection)
+-- _id : unique id system generated
+-- username: a username created by a visitor to the site
+-- password: password created by user stored using SHA256
+
+- campingVenues (Collection)
+-- _id : unique id system generated
+-- venue_name: name of the venue
+
+- venueType (Collection)
 
 ## Initial design Experience
 The pages have been designed to represent a brand throughout the site, be intuitive to the user, whilst focussing on the content. 
