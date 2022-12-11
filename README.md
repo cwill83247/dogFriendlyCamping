@@ -136,7 +136,7 @@ The Lighthouse, W3C Markup Validator,and the Lighthouse report were used to dete
 
 - As a returning visitor I want to be able to log into the site easily
 -- logging int othe site is quick and easy with clear messages.
-![timer and score]("https://github.com/cwill83247/mufccardgame/blob/main/assets/images/timer and score.PNG")
+![login page](https://dogfriendlycamping.herokuapp.com/static/images/loginscreenshot.png)
 - As a returning visitor I want to find the game equally challenging
 -- The cards are always displayed in random positions, so its always equally challenging.
 
@@ -151,19 +151,7 @@ The Lighthouse, W3C Markup Validator,and the Lighthouse report were used to dete
 Testing has been a continous process, after every commit, the code was tested to ensure the game functioned as expected.
 
 # Errors and Bugs
--When the page loaded the game started straight away not giving the user time to read the instructions. I resolved this by adding a html element that loads initially, and then on clicking start game changes to display the cards.
-
-- Not being able to remove event listeer at appropriate time - added an if statement with the remove event lister as part of script.
-
-- My Son identified that he could double click on a card and it would then match, leaving us then with odd numbers, and not making game very enjoyable.  I resolved this by adding an if statement to check if the id’s matched then not allow the match to take place. 
-
-- During testing I also identified that if no match the 2nd card didn’t display the image, it effectively flipped back immediately. I used setTimout to briefly show both cards, before flipping back.
-
-- Images were displaying a small inserts within the card - this was resolved by changing the padding settigns with the CSS.
-
-- It wasnt very clear when the game had ended for the user i.e they had matched all cards, or time had run out - this was resolved with the use of a modal to overlay the card area, and prpvide feedback to the users.
-
-- Responsiveness provided several challenges, as wanted cards to remain responsive. I used the grid layout to cut down the number of cards shown as the screen size decreased.
+-ADD !!!!!! 
 
 # Validation
 
@@ -189,17 +177,17 @@ Testing has been a continous process, after every commit, the code was tested to
 -	Balsamiq: Balsamiq was used to create the wireframes during the design process.
 -   JINJA Templating
 -	Chrome developer tools: Was used to inspect code, use of console was used to debug code, screen options were used to test on different screen sizes, different devices.
--  Mockup Generator - http://techsini.com/multi-mockup/index.php
+-    Mockup Generator - http://techsini.com/multi-mockup/index.php
 
 # Credits
 ## Images
-
+ !! ADD 
 
 
 # Acknowledgements and thanks.
 
 ## Spence Bariball (Mentor)
-Helping to keep me motivated, and being supportive when felt overwhelmed. Giving great advice, and suggesting workarounds/solutions to issues.
+Helping to keep me motivated, and being supportive. 
 
 
 ## Tutor Assistance
@@ -207,7 +195,7 @@ Kevin @ CI for helping me resolve an issue with defensive programming, and the r
 
 ## Slack Community
 
-
+Link url -----
 
 
 # dogFriendlyCamping
