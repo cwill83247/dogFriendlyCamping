@@ -172,7 +172,10 @@ Testing has been a continous process, after every commit, the code was tested to
 - Contrast issues identifed by Lighthouse Accessebility
 changed the navigation bar colours so more of a contrast.
 
-- another isues
+- Error: Start tag body seen but an element of the same type was already open.
+From line 56, column 1; to line 56, column 23
+
+changed the base template to include the class, and removed the class form other pages      
 
 # Validation
 
