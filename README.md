@@ -16,7 +16,7 @@ First Time Visitor Goals
 -	As a first time user I need to be able to navigate the site easily.
 -	As a first time user I need to be able to view the website clearly on both tablet and mobile, as well as desktop.
 -	As a first time user I need to be able to easily register with the site.
--	As a first time user I need to be able to find information quickly and intuitivly.
+-	As a first time user I need to be able to find information quickly and intuitively.
 
 
 Returning Visitor Goals
@@ -27,9 +27,9 @@ Returning Visitor Goals
 # Design
 ## Structure
 The site has been split into several pages with different access levels.
-Pages that a registered user can view
-Pages that an unregistered user can see
-Pages that an Admin can see.
+- Pages that a registered user can view.
+- Pages that an unregistered user can view.
+- Pages that an Admin can view.
 
 The design went through several design ideas before settling on the current design, with my intial design after user research be considered amaetuer, and not fit for a professional website.
 
@@ -45,13 +45,13 @@ The pages have been designed to represent a brand throughout the site, be intuit
 I have tried to limit clutter, and to provide a clean look and feel in terms of design for the user.
 
 ## Colour Scheme 
-The colours used in my design were from researching other websites that had an outdoor intention, it seemed a common theme for them to have a darker header, with white logo. I then used colours to compliment the intial dark grey.
+The colours used in my design were identified from researching other websites, that had an outdoor intention, it seemed a common theme for them to have a darker header, with white logo. I then used colours to compliment the intial dark grey.
 
 ## Branding
 Once the colour scheme had been identified I developed the logo ideas intially using - https://looka.com/, I then created the logo and tailored the design using Fireworks.
 The Peaks in the header were designed using https://app.haikei.app credit for the tutorial demonstrating this website - ttps://www.youtube.com/watch?v=lPJVi797Uy0
 
-Images were used for the logo design from - https://www.gograph.com/vector-clip-art/dog-face.html
+Images used for the logo design from - https://www.gograph.com/vector-clip-art/dog-face.html
 
 # ADD COLOUR PALLETTE !!!!
 
@@ -70,6 +70,7 @@ Primary responsiveness is acheived by using the Bootstrap CSS Framework.
 -	Filtering options os easy to navigata as the content grows.
 -	Searchable by post code, location or via a map.
 -   Improve Design
+-   Improve authentication and access to a more robust solution. 
 
 # Wireframes
 ## ADD
