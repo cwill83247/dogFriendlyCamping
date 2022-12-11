@@ -45,7 +45,7 @@ A footer was added so consitent throught the site.
 MongoDB was used as a non relational database, to hold the collections as listed below, they were stored in a DB "dog_friendly_camping" 
 
 # Structure 
-![db schema](https://dogfriendlycamping.herokuapp.com/static/images/dbschema.png)
+![db schema](https://dogfriendlycamping.herokuapp.com/static/images/dbschema.PNG)
 
 - users (Collection)
 -- _id : unique id system generated
