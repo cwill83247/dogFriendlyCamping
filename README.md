@@ -40,6 +40,13 @@ Branding has been placed just below, that reflects the purpose of the site. Colo
 
 A footer was added so consitent throught the site.
 
+## Database Design
+
+MongoDB was used as a non relational database, to hold the collections as listed below: 
+
+
+ADD IMAGE!!!!!!!
+
 ## Initial design Experience
 The pages have been designed to represent a brand throughout the site, be intuitive to the user, whilst focussing on the content. 
 I have tried to limit clutter, and to provide a clean look and feel in terms of design for the user.
