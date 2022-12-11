@@ -42,7 +42,7 @@
 #logo-banner {
   background-color:#8E9AA3;
   margin-top: 0px;
-  
+   
   
 }
 .dfc-logo {
@@ -62,11 +62,13 @@
 } 
 .nav-link{
   font-family:'Poppins',sans-serif;
-  letter-spacing:0.2rem;
-}
+  letter-spacing:0.1rem;
+  color:#fff;
+  }
 .nav-link:hover {
   font-size:larger;
   text-decoration: underline 3px ;
+  color:#fff;
 
 }
 /**background header image credit: Fireship - adapted form https://www.youtube.com/watch?v=lPJVi797Uy0 **/
@@ -95,19 +97,14 @@
   padding-bottom:1rem;
 }  
 
-.nav-pills{
-  color:blueviolet;
-  --bs-nav-pills-link-active-bg:rgb(226, 43, 128);
-  /** font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; **/
+.btn-homepage {
+  padding:10px;
+}
 
- 
- }
-.nav-pills:hover{
-  color:blueviolet;
-  --bs-nav-pills-link-active-bg:rgb(43, 226, 67);
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  
-  }
+header {
+  background-color: #2C4653;
+  border-color:#2C4653;;
+}
 
 
 /* 
