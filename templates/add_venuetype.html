@@ -23,7 +23,7 @@
                  is required.
               </div>
             </div>
-            <hr class="mb-4">
+            <div class="spacer2"></div>
          
           <button class="btn btn-primary btn-lg btn-block" type="submit">Add</button>
           </form>
@@ -48,11 +48,8 @@
       <td><a href="{{ url_for('edit_venuetype', venueType_id=venueType._id) }}" class="btn btn-primary">Edit</a></td>
       
       <td><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-{{venueType._id}}">Delete</button></td>
-    </tr>
-      
-      
-              
-    
+    </tr>   
+ 
 <!-- Confirm Deletion Modal -->
 
   <div id="modal-{{venueType._id}}" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -77,17 +74,6 @@
 
 {% endfor %}   
 </tbody>
-</table>
- 
-
-    <footer class="my-5 pt-5 text-muted text-center text-small">
-      <p class="mb-1">&copy; 2017-2018 Company Name</p>
-      <ul class="list-inline">
-        <li class="list-inline-item"><a href="#">Privacy</a></li>
-        <li class="list-inline-item"><a href="#">Terms</a></li>
-        <li class="list-inline-item"><a href="#">Support</a></li>
-      </ul>
-    </footer>
-  </div>
+</table> 
 
 {% endblock %}

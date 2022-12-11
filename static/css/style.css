@@ -28,23 +28,12 @@
   --bs-btn-disabled-border-color: #0d6efd;
 }
 
-/**override navbar **/
-.text-bg-dark {
-  background-color: #8E9AA3!important;
-}
-
-/**override position of nav and search text **/
-.me-lg-auto {
-  margin-right:auto!important;
-}
-
 
 #logo-banner {
   background-color:#8E9AA3;
-  margin-top: 0px;
-   
-  
+  margin-top: 0px;  
 }
+
 .dfc-logo {
   display: block; 
   margin-left:auto;
@@ -69,8 +58,11 @@
   font-size:larger;
   text-decoration: underline 3px ;
   color:#fff;
-
 }
+.spacer2 {
+  margin:0.8rem;
+}
+
 /**background header image credit: Fireship - adapted form https://www.youtube.com/watch?v=lPJVi797Uy0 **/
   .spacer {
     aspect-ratio: 1200/100;
