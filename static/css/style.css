@@ -11,7 +11,7 @@
 
 /** override boostrap button **/
 .btn-primary {
-  margin-top:1rem;
+  
   --bs-btn-color: #fff;
   --bs-btn-bg: #2C4653;
   --bs-btn-border-color: #2C4653;
