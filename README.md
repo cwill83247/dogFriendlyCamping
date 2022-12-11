@@ -25,15 +25,14 @@ Include added defensive programming for delete
 
 #Standard and Template below 
 
-# Match the Players
-![MUFC - Match the Players screen mockups](https://github.com/cwill83247/mufccardgame/blob/main/assets/images/mufcGame_mockup.PNG)
+# Dog Friendly Camping 
+# ADD IMAGE
 
 # Purpose
-The purpose of this site, is to host a card matching game for Manchester United Fans.
-It is intended to demonstrate some of the skills I have learnt, in HTML,CSS, and Javascript to meet the criteria of milestone 2
+The purpose of this site, is to provide a front end to a searchable database of dog friendly camping venues. It is intedned to allow users to register, login and add camping vanues that are suitable for dogs
+It is intended to demonstrate some of the skills I have learnt, in HTML,CSS, Javascript, Python, JINJA templating and MongoDB to meet the criteria of milestone 3
 
-The game is aimed at all fans, particularly the younger generation of fans. They will match pairs of player images based on the club. The players will be past and present stars.
-The idea was inspired by my 10 year old son, who is a Manchester Untied Fan. He selected the players to be included in the game, and was my main tester from a User Experience perspective. 
+The site is aimed at Adults of all ages, the idea was inspired by the addition fo a dog to the family, and need to find venues/sites that allow dogs. 
 
 # Live Site
 The live site is published here using github pages - https://cwill83247.github.io/mufccardgame/
@@ -41,41 +40,43 @@ The live site is published here using github pages - https://cwill83247.github.i
 # User Experience Design
 First Time Visitor Goals
 -	As a first time user I need to quickly and easily understand the purpose of the site.
--	As a first time user I need to be able to understand how to play the game.
+-	As a first time user I need to be able to navigate the site easily.
 -	As a first time user I need to be able to view the website clearly on both tablet and mobile, as well as desktop.
--	As a first time user I need to be able to easily play the game, through responsive design.
--	As a first time user I need to be able to find the game intuitive.
--	As a first time user I need to have feedback on how I have done in the game.
+-	As a first time user I need to be able to easily register with the site.
+-	As a first time user I need to be able to find information quickly and intuitivly.
+
 
 Returning Visitor Goals
--	As a returning visitor I want to be able to start the game quickly
--	As a returning visitor I want to find the game equally challenging
+-	As a returning visitor I want to be able to loginto the site easily
+-	As a returning visitor I want to find venues i have added easily
+-	As a returning visitor I want to Create, Update and delete venues linked to me.
 
 # Design
 ## Structure
-The page will have the Manchester United crest at the top of the page in a header div, which will clearly show users the page is about Manchester United. 
+The site has been split into several pages with different access levels.
+Pages that a registered user can view
+Pages that an unregistered user can see
+Pages that an Admin can see.
 
-Heading 1 will be under the crest, and display the name of the game.  
+The Index page has been designed as the shopfront to the site, to briefly explain what the site is about, encourage a user to register and contribute to the site.
 
-The left hand block will contain instructions explaining the purpose of the game and how to play the game. It will also contain timer, score information, and buttons to start a new game, and restart the canvas. 
+Site Navigation has been placed at the top of the page so easily identifiable, and intuitive for a vistor of the site.
+Branding has been placed just below, that reflects the purpose of the site. Colours wewre taken from researching other outdoor websites. The dark theme for the header fitted my intention in design.
 
-The right hand block will initially display with start game text, this is so the user has time to read instructions, rather than the game start once the page has loaded. On clicking start the card game area will display 12 cards and the timer countdown will begin. 
+A footer was added so consitent throught the site.
 
-The score count will update as pairs of games are matched, and provide the user with an indication of how they are doing. 
 ## Initial design Experience
-The page has been designed to initially ensure the focus is on what the game is about. By using the Manchester United crest clearly at the top of the page, and the theme uses the Manchester United colours. 
+The pages have been designed to represent a brand throughout the site, be intuitive to the user, whilst focussing on the content. 
 
-I have inntentionally not started the game on load, so the user is initially drawn to my left block, to read the instructions on game play, when they are happy they can click start on the right block, or below the left block. 
+I have tried to limit clutter, and to prpvide a clean look and feel int erms of design fo rthe user.
 
-The cards display initially showing the Manchester United crest to further enhance the purpose of the game.
 ## Colour Scheme 
-The colours used in my design were red #DA291C; black (rgba 0,0,0,0), and white rgb(255, 255, 255). These colours tie in with the Manchester United crest, and the teams identity.
+The colours used in my design were from researching other wbesites that had an outdoor intention, it seemd a common theme for them to have a darker header, with white logo. I thne used colours to compliment the intial dark grey.
 
-![Colour Pallete](https://github.com/cwill83247/mufccardgame/blob/main/assets/images/colourpallete.png)
+# ADD COLOUR PALLETTE !!!!
 
 ## Typography 
-The font used was from Google fonts - Bebas Neueu, I felt this reflected the brand clearly and matched the identity of Manchester United.
-https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&display=swap
+# ADD !!!!!!!!
 
 
 ## Images
