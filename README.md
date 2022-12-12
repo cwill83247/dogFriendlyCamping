@@ -157,17 +157,22 @@ The Lighthouse, W3C Markup Validator,and the Lighthouse report were used to dete
 ## Returning Visitor Goals
 
 - As a returning visitor I want to be able to log into the site easily
--- logging into the site is quick and easy with clear messages.
+  - logging into the site is quick and easy with clear messages.
 ![login page](https://dogfriendlycamping.herokuapp.com/static/images/loginscreenshot.PNG)
-- As a returning visitor I want to find the game equally challenging
--- The cards are always displayed in random positions, so its always equally challenging.
+- As a returning visitor I want to find venues i have added easily
+  - venues are easy to find by using the My Profile page when a user is logged in 
+![user profile page](https://dogfriendlycamping.herokuapp.com/static/images/userprofile.png)
+
+- As a returning visitor I want to Create, Update and delete venues linked to me.
+  - Options to add venues are done via the main menue bar, edit and delete of user created content is done withn the profile page.
+![edit and delete](https://dogfriendlycamping.herokuapp.com/static/images/editdelete.PNG)  
 
 # Further Testing
 - Python script was run through PEP8 compliance check to ensure free for errors. I installed the pypi.org PEP8 checker using "pip install pep8" the checker was then run against my app.py using the code "pep8 --show-source --show-pep8 app.py"
 - CSS was run through W3C validation
 - HTML was run through W3C validation 
 - Manual testing was carried out, against my user stories.
-- Family members provided user feedback. 
+- Family members provided user feedback, at very early stages it was considered the bran was unproffesional, so this was redesigned.
 
 Testing has been a continous process, after every commit, the code was tested to ensure the site functioned as expected.
 

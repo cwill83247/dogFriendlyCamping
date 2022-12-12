@@ -15,7 +15,7 @@
               <p></p>
               </div>
               <div class="row gy-4">
-                <!--adding venues listed by a user with edit and delete options -->-->
+                <!--adding venues listed by a user with edit and delete options -->
                {% for venue in venues %}                                                                      
                {% if session.user|lower == venue.added_by|lower %}             
                   <div class="col-lg-4 col-md-6 d-flex align-items-stretch aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
