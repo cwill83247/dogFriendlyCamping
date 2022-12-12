@@ -97,7 +97,7 @@ The site is intended to be quick,and intuitive for all users, on desktop, Tablet
 -   Improve authentication and access to a more robust solution. 
 
 # Wireframes
-## ADD
+![dfc wireframe](https://dogfriendlycamping.herokuapp.com/static/images/dfc_wireframe.png)
 
 # Deployment
 ## Heroku
@@ -188,6 +188,9 @@ Testing has been a continous process, after every commit, the code was tested to
 # Errors and Bugs
 - Contrast issues identifed by Lighthouse Accessebility
 changed the navigation bar colours so more of a contrast.
+
+- Required form fields 
+Had anissue with the form, and the required elements not being enforced, this was due to a bootstrap novalidate option being applied that is intended for custom forms.
 
 - Error: Start tag body seen but an element of the same type was already open.
 From line 56, column 1; to line 56, column 23
