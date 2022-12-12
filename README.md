@@ -51,15 +51,26 @@ MongoDB was used as a non relational database, to hold the collections as listed
 ![db schema](https://dogfriendlycamping.herokuapp.com/static/images/dbschema.PNG)
 
 - users (Collection)
--- _id : unique id system generated
--- username: a username created by a visitor to the site
--- password: password created by user stored using SHA256
+  - _id : unique id system generated
+  - username: a username created by a visitor to the site
+  - password: password created by user stored using SHA256
 
 - campingVenues (Collection)
--- _id : unique id system generated
--- venue_name: name of the venue
-
+  - _id : unique id system generated
+  - venue_name: name of the venue
+  - venue_type: selected from the venueType collection below
+  - location: location of the site
+  - date_visited: dtae added by user in plain text
+  - description: a description prpvided by the registered user.
+  - dog_specific_features: features that made it suitable for dogs
+  - added_by: this is pulled in from the session cookie and the user  that is authenticated.
+  - venue_image_url: a link to an image of the campsite, if no link added a default image is used
+  - tags: #Hastags to aid with searchng added by users.
+  
 - venueType (Collection)
+  - _id : unique id system generated
+  - venue_type: Added and Managed by administrators
+  - added_by: this is pulled in from the session cookie and the user  that is authenticated.
 
 ## Search Index
 Search index created within Gitpod, using python for the campingVenues collection to allow a search facility for users of the site when lookign for venues.
