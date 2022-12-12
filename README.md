@@ -31,7 +31,7 @@ The site has been split into several pages with different access levels.
 - Pages that an unregistered user can view.
 - Pages that an Admin can view.
 
-The design went through several design ideas before settling on the current design, with my intial design after user research be considered amaetuer, and not fit for a professional website.
+The design went through several design ideas before settling on the current design, with my intial design after user research being considered amaetuer, and not fit for a professional website.
 
 ![old logo](https://dogfriendlycamping.herokuapp.com/static/images/logo.fw.png)
 ![new logo](https://dogfriendlycamping.herokuapp.com/static/images/newDFClogo2.fw.png)
@@ -43,11 +43,11 @@ Branding has been placed just below, that reflects the purpose of the site. Colo
 
 A footer was added so consitent throught the site.
 
-## Database Design
+# Database Design
 
 MongoDB was used as a non relational database, to hold the collections as listed below, they were stored in a DB "dog_friendly_camping" 
 
-# Structure 
+## Structure 
 ![db schema](https://dogfriendlycamping.herokuapp.com/static/images/dbschema.PNG)
 
 - users (Collection)
@@ -61,11 +61,11 @@ MongoDB was used as a non relational database, to hold the collections as listed
 
 - venueType (Collection)
 
-# Search Index
+## Search Index
 Search index created within Gitpod, using python for the campingVenues collection to allow a search facility for users of the site when lookign for venues.
 The search was restricted to the fields - venue_name, location, description and tags.
 
-## Initial design Experience
+# Initial design Experience
 The pages have been designed to represent a brand throughout the site, be intuitive to the user, whilst focussing on the content. 
 I have tried to limit clutter, and to provide a clean look and feel in terms of design for the user.
 
@@ -79,7 +79,6 @@ The colours used in my design were identified from researching other websites, t
 - The Peaks in the header were designed using https://app.haikei.app credit for the tutorial demonstrating this website - ttps://www.youtube.com/watch?v=lPJVi797Uy0
 
 - Images used for the logo design from - https://www.gograph.com/vector-clip-art/dog-face.html
-
 
 ## Typography 
 # ADD !!!!!!!!
@@ -140,10 +139,6 @@ The Lighthouse, W3C Markup Validator,and the Lighthouse report were used to dete
 -	W3C Markup Validator
 -	W3C CSS Validator
 -	Lighthouse report
-
-## ADD CSS Screenshot
-## ADD Lightohouse Accessebility
-## ADD Lighthouse Performance
 
 # Testing User Stories from UX Section
 ##	First time visitor goals
