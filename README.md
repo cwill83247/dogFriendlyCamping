@@ -136,7 +136,7 @@ The following process was used to deploy this website:
 
 
 # Testing Tools
-The Lighthouse, W3C Markup Validator,and the Lighthouse report were used to determine whether there were any errors in the code. I ensured standards were met in design, and also accessebility.
+The Lighthouse, W3C Markup Validator,and the Lighthouse report were used to determine whether there were any errors in the code. I ensured standards were met in design, and also accessibility.
 
 -	W3C Markup Validator
 -	W3C CSS Validator
