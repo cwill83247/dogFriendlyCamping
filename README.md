@@ -81,7 +81,9 @@ The colours used in my design were identified from researching other websites, t
 - Images used for the logo design from - https://www.gograph.com/vector-clip-art/dog-face.html
 
 ## Typography 
-# ADD !!!!!!!!
+- Typography was provided by the Bootstrap CSS
+- Navigation was 'Poppins' with sans-serif as a backup
+ - Logo design used Franklin Gothic Demi form Adobe Fireworks
 
 # Responsiveness 
 The site is intended to be quick,and intuitive for all users, on desktop, Tablet or Mobile. This has been tsted across desktop, tablet and mobile. The design responds to varying screen sizes, and devices, changing the layout appropriately to ensure its useable on all device formats. 
@@ -148,12 +150,17 @@ The Lighthouse, W3C Markup Validator,and the Lighthouse report were used to dete
 
 - As a first time user I need to be able to navigate the site easily.
   - navigation is clear and consistent throughout the site, with the use of a niviagtion bar that adjust depending on user access level.
+
 ![navbar screenshot](https://dogfriendlycamping.herokuapp.com/static/images/navscreenshot.PNG)  
 
 - As a first time user I need to be able to view the website clearly on both tablet and mobile, as well as desktop.
+  - the site is accesible across various device screen sizes and types , this was tested as part of the deisgn process.
 
 - As a first time user I need to be able to easily register with the site.
+  - registration is quick and simple for the user
+
 - As a first time user I need to be able to find information quickly and intuitively.
+  - information is easy to access, wih use of a consistent navigation, and searching for content is easy with the use of a seatch box, user added content is stored for editing or deletion under the My Profile Page.
 
 
 ## Returning Visitor Goals
@@ -166,6 +173,7 @@ The Lighthouse, W3C Markup Validator,and the Lighthouse report were used to dete
 
 - As a returning visitor I want to Create, Update and delete venues linked to me.
   - Options to add venues are done via the main menu bar, edit and delete of user created content is done within the profile page.
+
 ![edit and delete](https://dogfriendlycamping.herokuapp.com/static/images/editdelete.PNG)  
 
 # Further Testing
