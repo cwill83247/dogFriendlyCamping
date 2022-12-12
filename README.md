@@ -58,6 +58,10 @@ MongoDB was used as a non relational database, to hold the collections as listed
 
 - venueType (Collection)
 
+# Search Index
+Search index created within Gitpod, using python for the campingVenues collection to allow a search facility for users of the site when lookign for venues.
+The search was restricted to the fields - venue_name, location, description and tags.
+
 ## Initial design Experience
 The pages have been designed to represent a brand throughout the site, be intuitive to the user, whilst focussing on the content. 
 I have tried to limit clutter, and to provide a clean look and feel in terms of design for the user.
@@ -153,20 +157,19 @@ The Lighthouse, W3C Markup Validator,and the Lighthouse report were used to dete
 ## Returning Visitor Goals
 
 - As a returning visitor I want to be able to log into the site easily
--- logging int othe site is quick and easy with clear messages.
+-- logging into the site is quick and easy with clear messages.
 ![login page](https://dogfriendlycamping.herokuapp.com/static/images/loginscreenshot.PNG)
 - As a returning visitor I want to find the game equally challenging
 -- The cards are always displayed in random positions, so its always equally challenging.
 
 # Further Testing
-- The Javascript was run through JSHint to ensure correct with no coding issues
-- CSS was run through W3C validation, and successfully passed
-- HTML was run through W3C validation, and passed with no errros 
-- Test script was created and run, using JEST to test some of the functionality as part of TDD principal.
+- Python script was run through PEP8 compliance check to ensure free for errors. I installed the pypi.org PEP8 checker using "pip install pep8" the checker was then run against my app.py using the code "pep8 --show-source --show-pep8 app.py"
+- CSS was run through W3C validation
+- HTML was run through W3C validation 
 - Manual testing was carried out, against my user stories.
-- Family members tested the game, and gave me feedback. 
+- Family members provided user feedback. 
 
-Testing has been a continous process, after every commit, the code was tested to ensure the game functioned as expected.
+Testing has been a continous process, after every commit, the code was tested to ensure the site functioned as expected.
 
 # Errors and Bugs
 - Contrast issues identifed by Lighthouse Accessebility
@@ -174,78 +177,72 @@ changed the navigation bar colours so more of a contrast.
 
 - Error: Start tag body seen but an element of the same type was already open.
 From line 56, column 1; to line 56, column 23
+changed the base template to include the class, and removed the class form other pages
 
-changed the base template to include the class, and removed the class form other pages      
+- PEP8 Compliance issues
+Issues arround indentatation and whitespace resolved.
+
+- Defensive Deletion
+Use of Modal to delete and prpvide and added prompt to users, resulted in only the first record ever being deleted. Ammended code to ensure unique id was passed to the modal.
 
 # Validation
 
-- HTML - Validator used - https://validator.w3.org/ Passes all test
+- HTML - Validator used - https://validator.w3.org/ 
 
-- Accessibility - Lighthouse Viewer chrome developer tools - https://developers.google.com/web/tools/lighthouse page achieve 91%
+- Accessibility - Lighthouse Viewer chrome developer tools - https://developers.google.com/web/tools/lighthouse 
+pages achieve between 84% - 97%, majority of errors were due to the Bootstrap CSS, and were an accepted trade off for using bootstrap.
 
-- CSS - Jigsaw W3C Validator CSS - https://jigsaw.w3.org/css-validator/ This document validates as CSS level 3 + SVG !
+- CSS - Jigsaw W3C Validator CSS - https://jigsaw.w3.org/css-validator/ 
+CSS Errors due to Bootstrap CSS, all of my own custom CSS passed validation
 
-- JS Hint - https://jshint.com/ - only error is related to module.exports as part of JEST testing and doesnt effect game play.
 
 # Technologies used
 -	HTML
 -	CSS
--	Javascript
+-	Python
+-   JINJA Templating
+-   Flask Framework
+-   MongoDB (non relational DB)
+-   Adobe Fireworks    
 
 # Applications and Libraries 
 -	Bootstrap: Bootstrap was used to assist with the responsiveness and styling of the website.
 -	Google Fonts: Google fonts were used to import the Bebas Neueu.
 -	Gitpod: Git add, commit and push commands were used to maintain version control.
 -	GitHub: was used as my online repository to score code, commit messages and versioning
--	GitHub Pages: was used to deploy my live site, and host my site
+-	Heroku: was used to deploy my live site, and host my site
 -	Balsamiq: Balsamiq was used to create the wireframes during the design process.
 -   JINJA Templating
+-   Flask Framework
+-   MongDB
 -	Chrome developer tools: Was used to inspect code, use of console was used to debug code, screen options were used to test on different screen sizes, different devices.
--    Mockup Generator - http://techsini.com/multi-mockup/index.php
+-   Mockup Generator - http://techsini.com/multi-mockup/index.php
 
 # Credits
 ## Images
- !! ADD 
-
+- Dog Cartoon Image - http://clipart-library.com/clipart/dog-clip-art-27.htm
+- Tent Outline - http://clipart-library.com/tent-outline-cliparts.html
+- Dog Cartoon Face  - https://www.gograph.com/vector-clip-art/dog-face.html
+- Initial logo idea - https://looka.com/ , I then designed using Fireworks, so could cusomise to suit the brand.
+- SVG Design for Peaks - https://www.youtube.com/watch?v=lPJVi797Uy0  
+- Home Page main image - https://familyvacationist.com/camping-with-pets-and-kids-etiquette/
+- Image Placeholder for venue image - https://i0.wp.com/bucketlistjourney.net/wp-content/uploads/2022/03/Take-Your-Dog-Camping-RF-1.jpg
 
 # Acknowledgements and thanks.
 
 ## Spence Bariball (Mentor)
-Helping to keep me motivated, and being supportive. 
-
+Helping to keep me motivated, and being supportive throughout. 
 
 ## Tutor Assistance
-Kevin @ CI for helping me resolve an issue with defensive programming, and the r 
+Kevin @ CI Tutor Support for helpign me to get modal to delete correct record, as part of defensive deletion. 
 
 ## Slack Community
 
-Link url -----
 
 
-# dogFriendlyCamping
-
-Dog Cartoon Image - http://clipart-library.com/clipart/dog-clip-art-27.htm
-Tent Outline - http://clipart-library.com/tent-outline-cliparts.html
-Dog Cartoon Face  - https://www.gograph.com/vector-clip-art/dog-face.html
-
-https://looka.com/ INITIAL LOGO DESIGN IDEA, and then deisgned using Fireworks
 
 
-https://www.youtube.com/watch?v=lPJVi797Uy0  SVG Design for Peaks
 
-https://app.haikei.app/  to create SVG
 
-Edited using Adobe Fireworks
 
-Search Index
-Dont forget to add a bit about createing searhc index within gitpod, using python for the campingVenues collection
-restricted to the fields venue_name, location, description and tags
-
-Thanks
-Mentor
-Kevin @ CI Tutor Support for helpign me to get modal to delete correct record, as part of defensive deletion. 
-
-Include added defensive programming for delete
-
-#Standard and Template below 
 

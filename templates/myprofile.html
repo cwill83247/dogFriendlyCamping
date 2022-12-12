@@ -7,21 +7,17 @@
   <div class="container">
     <div class="py-5 text-center">
       <h1 class="display-5 fw-bold lh-1 mb-3"> {{ username }} - user profile  </h1>
-
       <p></p>
-
-      <p class="lead">Below you will find all of the venues you have contributed to the site you can edit or delete them</p>
-           
-       
+      <p class="lead">Below you will find all of the venues you have contributed to the site you can edit or delete them</p>             
         <section id="venues" class="venues section-bg">
           <div class="container aos-init aos-animate" data-aos="fade-up">
-            <div class="section-header">
-             
+            <div class="section-header">             
               <p></p>
               </div>
               <div class="row gy-4">
-               {% for venue in venues %}                                                                            <!-- do i leave search page for just results and use a Prpfile page for a user to edit there own -->
-               {% if session.user|lower == venue.added_by|lower %}              <!--- logic to only show edit for users whos task it is-->
+                <!--adding venues listed by a user with edit and delete options -->-->
+               {% for venue in venues %}                                                                      
+               {% if session.user|lower == venue.added_by|lower %}             
                   <div class="col-lg-4 col-md-6 d-flex align-items-stretch aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
                   <div class="venue-member">
                     <div class="member-img">
@@ -41,7 +37,7 @@
                     </div>
                   </div>
                 </div>
-              <!-- Confirm Deletion Modal -->
+  <!-- Confirm Deletion Modal -->
 
   <div id="modal-{{venue._id}}" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">

@@ -84,10 +84,10 @@ def login():
                 request.form.get("username")))
                 return redirect(url_for("myprofile",
                 username=session["user"]))
-        else:
-            # invalid password match
-            flash("Incorrect Username and/or Password")
-            return redirect(url_for("login"))
+            else:
+                # invalid password match
+                flash("Incorrect Username and/or Password")
+                return redirect(url_for("login"))
 
         else:
             # username doesn't exist
