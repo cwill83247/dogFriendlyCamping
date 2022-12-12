@@ -33,6 +33,9 @@ The site has been split into several pages with different access levels.
 
 The design went through several design ideas before settling on the current design, with my intial design after user research be considered amaetuer, and not fit for a professional website.
 
+![old logo](https://dogfriendlycamping.herokuapp.com/static/images/logo.fw.png)
+![new logo](https://dogfriendlycamping.herokuapp.com/static/images/newDFClogo2.fw.png)
+
 The Index page has been designed as the shopfront to the site, to briefly explain what the site is about, encourage a user to register and contribute to the site.
 
 Site Navigation has been placed at the top of the page so easily identifiable, and intuitive for a vistor of the site.
@@ -69,23 +72,21 @@ I have tried to limit clutter, and to provide a clean look and feel in terms of 
 ## Colour Scheme 
 The colours used in my design were identified from researching other websites, that had an outdoor intention, it seemed a common theme for them to have a darker header, with white logo. I then used colours to compliment the intial dark grey.
 
+![colour pallete](https://dogfriendlycamping.herokuapp.com/static/images/colourpallete.PNG)
+
 ## Branding
-Once the colour scheme had been identified I developed the logo ideas intially using - https://looka.com/, I then created the logo and tailored the design using Fireworks.
-The Peaks in the header were designed using https://app.haikei.app credit for the tutorial demonstrating this website - ttps://www.youtube.com/watch?v=lPJVi797Uy0
+- Once the colour scheme had been identified I developed the logo ideas intially using - https://looka.com/, I then created the logo and tailored the design using Fireworks.
+- The Peaks in the header were designed using https://app.haikei.app credit for the tutorial demonstrating this website - ttps://www.youtube.com/watch?v=lPJVi797Uy0
 
-Images used for the logo design from - https://www.gograph.com/vector-clip-art/dog-face.html
+- Images used for the logo design from - https://www.gograph.com/vector-clip-art/dog-face.html
 
-# ADD COLOUR PALLETTE !!!!
 
 ## Typography 
 # ADD !!!!!!!!
 
 # Responsiveness 
-The site is intended to be quick,and intuitive for all users, on desktop, Tablet or Mobile. 
-
-The design responds to varying screen sizes, and devices, changing the layout appropriately to ensure its useable on all device formats. 
-
-Primary responsiveness is acheived by using the Bootstrap CSS Framework.
+The site is intended to be quick,and intuitive for all users, on desktop, Tablet or Mobile. This has been tsted across desktop, tablet and mobile. The design responds to varying screen sizes, and devices, changing the layout appropriately to ensure its useable on all device formats. 
+- Primary responsiveness is acheived by using the Bootstrap CSS Framework.
 
 # Future developments
 -	Pagination for results.
@@ -147,15 +148,20 @@ The Lighthouse, W3C Markup Validator,and the Lighthouse report were used to dete
 # Testing User Stories from UX Section
 ##	First time visitor goals
 - As a first time user I need to quickly and easily understand the purpose of the site.
---	The theme of the site is easily identifiable, and the purpose clearly displayed, the design is clean and simple with focus on the users experience.
+  - The theme of the site is easily identifiable, and the purpose clearly displayed, the design is clean and simple with focus on the users experience.
 ![initial screen](https://dogfriendlycamping.herokuapp.com/static/images/userstory1.fw.png)
 
--	As a first time user I need to be able to navigate the site easily.
---	navigation is clear and consistent throughout the site.
+- As a first time user I need to be able to navigate the site easily.
+  - navigation is clear and consistent throughout the site, with the use of a niviagtion bar that adjust depending on user access level.
+![navbar screenshot](https://dogfriendlycamping.herokuapp.com/static/images/navscreenshot.PNG)  
+
+- As a first time user I need to be able to view the website clearly on both tablet and mobile, as well as desktop.
+
+- As a first time user I need to be able to easily register with the site.
+- As a first time user I need to be able to find information quickly and intuitively.
 
 
 ## Returning Visitor Goals
-
 - As a returning visitor I want to be able to log into the site easily
   - logging into the site is quick and easy with clear messages.
 ![login page](https://dogfriendlycamping.herokuapp.com/static/images/loginscreenshot.PNG)
@@ -164,7 +170,7 @@ The Lighthouse, W3C Markup Validator,and the Lighthouse report were used to dete
 ![user profile page](https://dogfriendlycamping.herokuapp.com/static/images/userprofile.png)
 
 - As a returning visitor I want to Create, Update and delete venues linked to me.
-  - Options to add venues are done via the main menue bar, edit and delete of user created content is done withn the profile page.
+  - Options to add venues are done via the main menu bar, edit and delete of user created content is done within the profile page.
 ![edit and delete](https://dogfriendlycamping.herokuapp.com/static/images/editdelete.PNG)  
 
 # Further Testing
