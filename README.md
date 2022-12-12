@@ -1,5 +1,5 @@
 # Dog Friendly Camping 
-## ADD IMAGE of screens ----- 
+![mockup](https://dogfriendlycamping.herokuapp.com/static/images/dfcmockup.PNG)
 
 # Purpose
 The purpose of this site, is to provide a front end to a searchable database of dog friendly camping venues. It is intended to allow users to register, login and add camping venues that are suitable for dogs
