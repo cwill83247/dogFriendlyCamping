@@ -8,9 +8,7 @@
     <div class="py-5 text-center">
       <h1 class="display-5 fw-bold lh-1 mb-3">Add a Dog Friendly Venue</h1>
       <p class="lead">Please add as much information as you can to help fellow members, and thank you for contributing</p>
-    </div>
-
-   
+    </div>  
       <div class="col-md-8 order-md-1">
         <h4 class="mb-3">Add Venue Information</h4>
         <form class="row g-3" method="POST" action="{{ url_for('add_venue') }}" >
@@ -31,7 +29,7 @@
                 {% endfor %}
               </select>
               <div class="invalid-feedback">
-                Please select a valid country.
+                Please select a valid venue type.
               </div>
             </div>
             <div class="mb-3">
@@ -61,14 +59,7 @@
             <label for="dog_specific_features">What made it great for Dogs?<span class="text-muted">(Optional)</span></label>
             <input type="text" class="form-control" id="dog_specific_features" name="dog_specific_features" placeholder="for example - Did it have a seperate dog walking area ?" >
           </div>
-          <div class="mb-3">
-            <label for="tags">Add Tags that will help people search<span class="text-muted">(Optional)</span></label>
-            <input type="text" class="form-control" id="tags" name="tags" placeholder="#Dog Walking Area #Off Lead Area #Dog Shower">
-            <div class="invalid-feedback">
-              Please add at least 1 tag to help people when searching.
-            </div>
-          </div>
-          <div class="mb-3">
+           <div class="mb-3">
             <label for="image_url">Image URL<span class="text-muted">(Optional)</span></label>
             <input type="text" class="form-control" id="image_url" name="image_url" placeholder="please include the full address including http:// or https://">
             <div class="invalid-feedback">

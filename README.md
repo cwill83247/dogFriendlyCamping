@@ -65,7 +65,7 @@ MongoDB was used as a non relational database, to hold the collections as listed
   - dog_specific_features: features that made it suitable for dogs
   - added_by: this is pulled in from the session cookie and the user  that is authenticated.
   - venue_image_url: a link to an image of the campsite, if no link added a default image is used
-  - tags: #Hastags to aid with searchng added by users.
+  
   
 - venueType (Collection)
   - _id : unique id system generated
