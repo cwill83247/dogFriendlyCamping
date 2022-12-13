@@ -265,6 +265,7 @@ Helping to keep me motivated, and being supportive throughout.
 Kevin @ CI Tutor Support for helpign me to get modal to delete correct record, as part of defensive deletion. 
 
 ## Slack Community
+Help with the Update_One for DB - https://code-institute-room.slack.com/archives/C7JQY2RHC/p1644945850959679
 
 
 
