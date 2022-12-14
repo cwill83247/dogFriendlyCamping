@@ -257,6 +257,8 @@ CSS Errors due to Bootstrap CSS, all of my own custom CSS passed validation
 - Image Placeholder for venue image - https://i0.wp.com/bucketlistjourney.net/wp-content/uploads/2022/03/Take-Your-Dog-Camping-RF-1.jpg
 
 # Acknowledgements and thanks.
+## Code Institute
+Basis of project was from Task project as part of my CI course
 
 ## Spence Bariball (Mentor)
 Helping to keep me motivated, and being supportive throughout. 
